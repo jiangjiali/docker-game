@@ -1,2 +1,2 @@
 # docker-game
-构建game镜像
+构建GameServer项目镜像
