@@ -1,4 +1,4 @@
-FROM amd64/alpine:3.20
+FROM amd64/alpine:3.21
 
 ENV APP_UID=1654 \
     # 运行时端口
@@ -6,7 +6,6 @@ ENV APP_UID=1654 \
     # Development 开发版 Staging 暂存版 Production 发布版
     ASPNETCORE_ENVIRONMENT=Production \
     DOTNET_RUNNING_IN_CONTAINER=true \
-    ALPINE_VERSION=3.20 \
     DOTNET_VERSION=9.0.0
 
 COPY *.tar.gz /root/
